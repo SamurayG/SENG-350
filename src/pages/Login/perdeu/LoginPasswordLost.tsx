@@ -26,7 +26,6 @@ function LoginPasswordLost() {
   return (
     <section className="animeleft">
       <Head title={"Forgot password"} description="Account login" />
-      <Head title={"Lost password"} description="Login conta" />
       <Title>Forgot Password?</Title>
       {data ? (
         <p style={{ color: "#4c1" }}>{data}</p>
