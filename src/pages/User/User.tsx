@@ -13,7 +13,7 @@ function User() {
   if (data)
     return (
       <section className="container">
-        <Head title={"Minha conta "} description="Minha conta" />
+        <Head title={"My Account"} description="My Account" />
         <UserHeader />
         <Routes>
           <Route element={<Feed user={data.id} />} path="/" />
