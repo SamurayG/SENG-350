@@ -44,11 +44,11 @@ function UserPhotoPost() {
   return (
     <AnimeLeft>
       <UserPhotoPostCss>
-        <Head title={"Postar foto "} description="Minha conta" />
+        <Head title={"Post Photo"} description="My Account" />
         <form onSubmit={handleSubmitDogPhoto}>
-          <Input label="Nome" type="text" name="nome" {...nome} />
-          <Input label="Peso" type="number" name="Peso" {...peso} />
-          <Input label="Idade" type="number" name="idade" {...idade} />
+          <Input label="Name" type="text" name="name" {...nome} />
+          <Input label="Weight" type="number" name="weight" {...peso} />
+          <Input label="Age" type="number" name="age" {...idade} />
           <input
             type="file"
             name="file"
@@ -56,7 +56,7 @@ function UserPhotoPost() {
             className="file"
             onChange={handleImgChange}
           />
-          <Button text="Postar foto" disabled={loading} />
+          <Button text="Post Photo" disabled={loading} />
           {error && <Error error={error} />}
         </form>
         <div>

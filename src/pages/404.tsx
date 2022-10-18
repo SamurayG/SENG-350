@@ -4,7 +4,7 @@ import { Title } from "../styles/GlobalStyle";
 function NotFound404() {
   return (
     <div className="container mainContainer" style={{ margin: "3rem auto" }}>
-      <Head title={"Pagina nao encontrada "} description="Minha conta" />
+      <Head title={"Pagina nao encontrada "} description="My Account" />
       <Title>Erro: 404</Title>
       <p>Pagina nao encontrada</p>
     </div>

@@ -105,7 +105,7 @@ export const Title = styled.h1`
     width: 1.5rem;
     bottom: 5px;
     position: absolute;
-    background: #fb5;
+    background: #ffece4;
     height: 1.5rem;
     left: -5px;
     border-radius: 0.2rem;

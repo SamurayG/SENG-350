@@ -24,9 +24,9 @@ export const InputStyle = styled.input`
   &:focus,
   &:hover {
     outline: none;
-    border-color: #fb1;
+    border-color: #ffece4;
     background: white;
-    box-shadow: 0 0 0 3px #fea;
+    box-shadow: 0 0 0 3px #998e89;
   }
 `;
 
