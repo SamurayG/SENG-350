@@ -5,7 +5,7 @@ import { ButtonDelete } from "./style";
 function PhotoDelete({ id }: { id: number }) {
   const { loading, request } = useFetch();
   const handleDeletePhoto = async () => {
-    const confirm = window.confirm("Voce tem certeza que deseja deletar?");
+    const confirm = window.confirm("Are you sure you want to delete?");
     if (confirm) {
       const { options, url } = PHOTO_DELETE(id);
       const { response } = await request(url, options);
@@ -16,9 +16,9 @@ function PhotoDelete({ id }: { id: number }) {
   return (
     <>
       {loading ? (
-        <ButtonDelete disabled>Deletando</ButtonDelete>
+        <ButtonDelete disabled>Deleting</ButtonDelete>
       ) : (
-        <ButtonDelete onClick={handleDeletePhoto}>Deletar</ButtonDelete>
+        <ButtonDelete onClick={handleDeletePhoto}>Delete</ButtonDelete>
       )}
     </>
   );

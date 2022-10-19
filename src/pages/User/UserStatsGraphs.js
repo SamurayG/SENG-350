@@ -25,7 +25,7 @@ const UserStatsGraphs = ({ data }) => {
   return (
     <section className={`${styles.graph} animeLeft`}>
       <div className={`${styles.total} ${styles.graphItem}`}>
-        <p>Acessos: {total}</p>
+        <p>Visitors: {total}</p>
       </div>
       <div className={styles.graphItem}>
         <VictoryPie
