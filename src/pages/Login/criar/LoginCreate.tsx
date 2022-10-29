@@ -21,6 +21,8 @@ function LoginCreate() {
   async function CreateUser(e: FormEvent) {
     e.preventDefault();
 
+    //TODO: Add error handling for when the password and confirmpassword don't match. 
+    //Setting these errors should probably be done in SENG-350/src/Hooks/useForm.jsx
     if (username.validate() && email.validate() && password.validate() && confirmpassword.validate() && confirmpassword.value === password.value) {
       const { options, url } = USER_POST({
         username: username.value,
