@@ -16,11 +16,12 @@ function LoginCreate() {
   const username = useForm();
   const email = useForm("email");
   const password = useForm();
+  const confirmpassword = useForm();
 
   async function CreateUser(e: FormEvent) {
     e.preventDefault();
 
-    if (username.validate() && email.validate() && password.validate()) {
+    if (username.validate() && email.validate() && password.validate() && confirmpassword.validate() && confirmpassword.value === password.value) {
       const { options, url } = USER_POST({
         username: username.value,
         email: email.value,
@@ -42,6 +43,7 @@ function LoginCreate() {
         <Input {...username} label="Username" type="text" name="username" />
         <Input {...email} label="Email" type="email" name="email" />
         <Input {...password} label="Password" type="password" name="password" />
+        <Input {...confirmpassword} label="Confirm Password" type="password" name="confirmpassword" />
         {!loading ? (
           <Button text="Register" />
         ) : (

@@ -1,42 +1,22 @@
-<div align='center'>
+# SENG 350: Software Architecture and Design
+An introduction to analysis and design of software architectures with UML (Unified Modelling Language) and their subsequent synthesis at the program level. Topics include requirements analysis, analysis and design of static and dynamic view points of architectures and model driven engineering. Design patterns are introduced and applied as solutions to recurring design problems. Students are familiarized with component reuse, event-driven programming and computer-aided software engineering tools. The course includes a major design project.
 
-<div>
- <img alt"sdd" src="https://user-images.githubusercontent.com/72309855/181462833-809ffc84-07e3-4027-b750-bba61982e4f1.png" />
-</div>
+## Project Objective
+Imagine you are new to a country and new at the UVic. Imagine you don't know the language, don't know the environment, don't have 
+social contacts. How can we actively support the integration of such people (including professionals) who are new to Canada/ UVic?
 
-</div>
+## Project Description
+This project is designed to support the transition of foreign students to life at UVic. The UVic Onboarding Application allows students to create an account, find roomates and housing, search for clubs, and more. 
 
-</br>
+## Installation 
+```
+Clone the repository 
+$ https://github.com/bhavanvir/SENG-350.git
 
-## <a href="https://dogs-black-alpha.vercel.app/" target="_blank">Demo</a>
+Install dependencies
+$ npm install
 
+Start the application
+$ npm start
+```
 
-<h2>🔖 Descrição</h2>
-<p>🐕 Criação da aplicação Dogs, uma rede social para cachorros criada no curso de React da Origamid.</p>
-
-
-</br>
-
-<h2>🚀 Tecnologias</h2>
-<ul>
-    <li><a href="https://create-react-app.dev/" target="_blank">React</a></li>
-    <li><a href="https://reactrouter.com/" target="_blank">React Router</a></li>
-    <li><a href="https://github.com/FormidableLabs/victory" target="_blank">Victory</a></li>
-</ul>
-
-<br>
-
-<h2>ℹ️ Como utilizar</h2>
-
-    Clone esse repositório
-    $ git clone https://github.com/Antonio-Sitoe/Dogs.git
-
-    Instalar dependências
-    $ npm install
-
-    Inicie o projeto
-    $ npm start
-
-
-<br>
-Criado com 💙 por <a href="https://github.com/antonio-sitoe/" target="_blank">Antonio Manuel Sitoe</a></p>
