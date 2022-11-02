@@ -15,8 +15,8 @@ function LoginCreate() {
   const { error, loading, request } = useFetch();
   const username = useForm();
   const email = useForm("email");
-  const password = useForm();
-  const confirmpassword = useForm();
+  const password = useForm("password");
+  const confirmpassword = useForm("confirmpassword");
 
   async function CreateUser(e: FormEvent) {
     e.preventDefault();
