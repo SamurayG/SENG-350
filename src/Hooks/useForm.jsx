@@ -18,6 +18,9 @@ const types = {
   },
 };
 
+var confirmpassword = "";
+var password = "";
+
 function useForm(type) {
   const [value, setValue] = React.useState("");
   const [erro, setError] = React.useState("");
@@ -29,8 +32,18 @@ function useForm(type) {
     setValue(target.value);
   }
 
+  if (type === "confirmpassword") {
+    confirmpassword = value;
+  } else if (type === "password") {
+    password = value;
+  }
+
   function validate(value) {
     if (type === false) return true;
+    if (password !== confirmpassword) {
+      setError("Passwords do not match");
+      return false;
+    }
     if (value.length === 0) {
       setError("Fill in a value");
       return false;
