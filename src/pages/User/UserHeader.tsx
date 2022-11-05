@@ -14,7 +14,7 @@ function UserHeader() {
         setTitle("Post Your Photo");
         break;
       case "/conta/estatisticas":
-        setTitle("Statistics");
+        setTitle("Clubs");
         break;
       default:
         setTitle("My Account");
