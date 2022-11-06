@@ -32,7 +32,7 @@ function UserStats() {
   if (data)
     return (
       <React.Suspense fallback={<Loading />}>
-        <Head title={"Statistics"} description="My Account" />
+        <Head title={"Clubs"} description="My Account" />
         <UserStatsGraphs data={data} />
       </React.Suspense>
     );
