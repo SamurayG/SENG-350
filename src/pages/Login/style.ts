@@ -38,7 +38,7 @@ export const LoginForms = styled.form`
 `;
 export const LinkLosthref = styled(Link)`
   display: inline-block;
-  color: #666;
+  color: #616161;
   padding: 0.5rem 0;
   line-height: 1;
 
@@ -76,8 +76,8 @@ export const Register = styled.div`
     cursor: pointer;
     border: none;
     border-radius: 0.4rem;
-    background: #ffece4;
-    color: #764701;
+    background: #292929;
+    color: #FFFFFF;
     box-sizing: border-box;
     padding: 0.8rem 1.2rem;
     transition: 0.2s;
@@ -86,7 +86,7 @@ export const Register = styled.div`
     &:hover,
     &:focus {
       outline: none;
-      box-shadow: 0 0 0 3px #998e89, 0 0 0 4px #ffece4;
+      box-shadow: 0 0 0 3px #616161, 0 0 0 4px #292929;
     }
 
     &:disabled {

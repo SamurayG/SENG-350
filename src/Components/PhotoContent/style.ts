@@ -147,8 +147,8 @@ export const FormPhoto = styled.form`
     &:hover {
       outline: none;
       svg path {
-        fill: #998e89;
-        stroke: #ffece4;
+        fill: #616161;
+        stroke: #292929;
       }
 
       svg g {
@@ -175,9 +175,9 @@ export const Textearea = styled.textarea`
   &:focus,
   &:hover {
     outline: none;
-    border-color: #ffece4;
+    border-color: #292929;
     background: white;
-    box-shadow: 0 0 0 3px #998e89;
+    box-shadow: 0 0 0 3px #616161;
   }
 `;
 

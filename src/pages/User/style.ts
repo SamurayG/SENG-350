@@ -36,8 +36,8 @@ export const UserHeaderNavCss = styled.nav`
       }
       &.active {
         background: white;
-        box-shadow: 0 0 0 3px #998e89;
-        border-color: #ffece4;
+        box-shadow: 0 0 0 3px #616161;
+        border-color: #292929;
       }
     }
   }
@@ -78,7 +78,7 @@ export const UserHeaderNavCss = styled.nav`
       &.active {
         background: white;
         box-shadow: none;
-        border-bottom-color: #ffece4;
+        border-bottom-color: #292929;
       }
     }
     button {
@@ -112,10 +112,10 @@ export const MenuHamburguer = styled.button`
   &:focus,
   &.active {
     background: white;
-    box-shadow: 0 0 0 3px #998e89;
-    border-color: #ffece4;
+    box-shadow: 0 0 0 3px #616161;
+    border-color: #292929;
     outline: none;
-    color: #ffece4;
+    color: #292929;
   }
 
   &.active::after {
