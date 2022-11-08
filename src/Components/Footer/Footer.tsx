@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import Dogs from "../../assets/dogs-footer.svg";
 const FooterCss = styled.footer`
-  background: #ffece4;
+  background: #292929;
   padding: 3rem 1rem 0 1rem;
   text-align: center;
-  color: #764701;
+  color: #FFFFFF;
   height: 10rem;
   img {
     margin: 1rem auto;

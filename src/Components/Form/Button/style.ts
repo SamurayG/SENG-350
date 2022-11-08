@@ -6,8 +6,8 @@ export const ButtonCss = styled.button`
   cursor: pointer;
   border: none;
   border-radius: 0.4rem;
-  background: #ffece4;
-  color: #764701;
+  background: #292929;
+  color: #FFFFFF;
   box-sizing: border-box;
   padding: 0.8rem 1.2rem;
   transition: 0.2s;
@@ -16,7 +16,7 @@ export const ButtonCss = styled.button`
   &:hover,
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px #998e89, 0 0 0 4px #ffece4;
+    box-shadow: 0 0 0 3px #616161, 0 0 0 4px #292929;
   }
 
   &:disabled {
