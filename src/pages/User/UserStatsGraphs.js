@@ -1,56 +1,69 @@
-import React from "react";
-import styles from "./UserStatsGraphs.module.css";
-import { VictoryPie, VictoryChart, VictoryBar } from "victory";
+import React, { useState } from "react";
+// import styles from "./UserStatsGraphs.module.css";
+import "./App.css"
 
-const UserStatsGraphs = ({ data }) => {
-  const [graph, setGraph] = React.useState([]);
-  const [total, setTotal] = React.useState(0);
+const UserStatsGraphs = () => {
 
-  React.useEffect(() => {
-    if (data.length > 0) {
-      const graphData = data.map((item) => {
-        return {
-          x: item.title,
-          y: Number(item.acessos),
-        };
+  const USERS = [
+    { id: 1, name: 'Robotics', members: 32 },
+    { id: 2, name: 'Rocketry', members: 30 },
+    { id: 3, name: 'Dogs', members: 40 },
+    { id: 4, name: 'African & Caribbean Association', members: 50 },
+    { id: 5, name: 'Dancing', members: 30 },
+    { id: 6, name: 'Chess', members: 68 },
+    { id: 7, name: 'Reading', members: 34 },
+    { id: 8, name: 'Hiking', members: 28 },
+    { id: 9, name: 'Soccer', members: 23 },
+    { id: 10, name: 'Basketball Intramurals', members: 23 },
+  ];
+
+  const [name, setName] = useState('');
+
+  // the search result
+  const [foundUsers, setFoundUsers] = useState(USERS);
+
+  const filter = (e) => {
+    const keyword = e.target.value;
+
+    if (keyword !== '') {
+      const results = USERS.filter((user) => {
+        return user.name.toLowerCase().startsWith(keyword.toLowerCase());
+        // Use the toLowerCase() method to make it case-insensitive
       });
-
-      setTotal(
-        data.map(({ acessos }) => Number(acessos)).reduce((a, b) => a + b)
-      );
-      setGraph(graphData);
+      setFoundUsers(results);
+    } else {
+      setFoundUsers(USERS);
+      // If the text field is empty, show all users
     }
-  }, [data]);
+
+    setName(keyword);
+  };
 
   return (
-    <section className={`${styles.graph} animeLeft`}>
-      <div className={`${styles.total} ${styles.graphItem}`}>
-        <p>Visitors: {total}</p>
+
+    <div className="center">
+      <input
+        type="search"
+        value={name}
+        onChange={filter}
+        className="input"
+        placeholder="Filter"
+      />
+
+      <div className="user-list">
+        {foundUsers && foundUsers.length > 0 ? (
+          foundUsers.map((user) => (
+            <li key={user.id} className="user">
+              <span className="user-id">{user.id}</span>
+              <span className="user-name">{user.name}</span>
+              <span className="user-members">{user.members} members</span>
+            </li>
+          ))
+        ) : (
+          <h1>No results found!</h1>
+        )}
       </div>
-      <div className={styles.graphItem}>
-        <VictoryPie
-          data={graph}
-          innerRadius={50}
-          padding={{ top: 20, bottom: 20, left: 80, right: 80 }}
-          style={{
-            data: {
-              fillOpacity: 0.9,
-              stroke: "#fff",
-              strokeWidth: 2,
-            },
-            labels: {
-              fontSize: 14,
-              fill: "#333",
-            },
-          }}
-        />
-      </div>
-      <div className={styles.graphItem}>
-        <VictoryChart>
-          <VictoryBar alignment="start" data={graph}></VictoryBar>
-        </VictoryChart>
-      </div>
-    </section>
+    </div>
   );
 };
 
