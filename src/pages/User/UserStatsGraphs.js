@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import styles from "./UserStatsGraphs.module.css";
 import "./App.css"
+import Modal from './Components/Modal'
 
 const UserStatsGraphs = () => {
 
@@ -56,7 +57,8 @@ const UserStatsGraphs = () => {
             <li key={user.id} className="user">
               <span className="user-id">{user.id}</span>
               <span className="user-name">{user.name}</span>
-              <span className="user-members">{user.members} members</span>
+              {/* <span className="user-members">{user.members} members</span> */}
+              <Modal/>
             </li>
           ))
         ) : (
