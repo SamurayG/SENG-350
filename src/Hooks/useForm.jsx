@@ -1,4 +1,5 @@
 import React from "react";
+import { USERS } from "./../pages/User/UserStatsGraphs.js";
 
 const types = {
   email: {
@@ -21,6 +22,13 @@ const types = {
 var confirmpassword = "";
 var password = "";
 
+var inputValue = "";
+
+var validClubs = [];
+for (let i = 0; i < USERS.length; i++) {
+  validClubs.push(USERS[i].name.toLowerCase());
+}
+
 function useForm(type) {
   const [value, setValue] = React.useState("");
   const [erro, setError] = React.useState("");
@@ -38,10 +46,18 @@ function useForm(type) {
     password = value;
   }
 
+  if (type === "whereToPost") {
+    inputValue = value.toLowerCase();
+  }
+
   function validate(value) {
     if (type === false) return true;
     if (password !== confirmpassword) {
       setError("Passwords do not match");
+      return false;
+    }
+    if (type === "whereToPost" && validClubs.includes(inputValue) === false) {
+      setError("Invalid club");
       return false;
     }
     if (value.length === 0) {

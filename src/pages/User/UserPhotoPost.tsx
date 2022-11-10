@@ -11,6 +11,7 @@ import { AnimeLeft } from "../../styles/GlobalStyle";
 import { UserPhotoPostCss, UserPhotoPostPhotoPreviewCss } from "./style";
 
 function UserPhotoPost() {
+  const whereToPost = useForm("whereToPost");
   const nome = useForm();
   const peso = useForm("number");
   const idade = useForm("number");
@@ -46,6 +47,7 @@ function UserPhotoPost() {
       <UserPhotoPostCss>
         <Head title={"Post Photo"} description="My Account" />
         <form onSubmit={handleSubmitDogPhoto}>
+          <Input label="Where To Post" type="text" name="whereToPost" {...whereToPost} />
           <Input label="Name" type="text" name="name" {...nome} />
           <Input label="Weight" type="number" name="weight" {...peso} />
           <Input label="Age" type="number" name="age" {...idade} />
