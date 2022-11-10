@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Modal.css";
 import "../App.css"
 
-export default function Modal() {
+export default function Soccer() {
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -14,7 +14,7 @@ export default function Modal() {
   } else {
     document.body.classList.remove('active-modal')
   }
-
+  
   return (
     <>
     <button onClick={toggleModal} className="btn-modal">
@@ -25,15 +25,13 @@ export default function Modal() {
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
-            <h2>Dogs</h2>
+            <h2>Soccer</h2>
             <p>
-            Dogs are highly social animals who enjoy the company of other canines. 
-            They also like being active and having something to do. Many of today’s 
-            dogs are lucky enough to be treated as family members and don’t have to 
-            work like their ancestors did, but spending a lot of time at home often 
-            leaves them bored. Lack of socialization and boredom can lead to health 
-            and behavioral problems, but for many dogs, hanging out with other canines 
-            on a regular basis can help keep them happy and healthy. 
+            Monday nights is a co-ed 7 aside soccer league wtih small nets 
+            and a smaller field and teams must have one member of the opposite 
+            gender on the field at all times. Tuesday nights is 11 aside co-ed 
+            league that must have a minimum of 2 members of the oppoosite gender 
+            on the field at all times. 
             </p>
             <button className="close-modal" onClick={toggleModal}>
               CLOSE
