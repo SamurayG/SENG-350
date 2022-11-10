@@ -37,8 +37,8 @@ function UserHeaderNav() {
       ${mobile ? "mobile" : "desktop"} `}
       >
         <NavLink to="/conta" end>
-          <img src={MyPhotos} alt="Minhas fotos" />
-          {mobile && "Minhas fotos"}
+          <img src={MyPhotos} alt="My Photos" />
+          {mobile && "My Photos"}
         </NavLink>
         <NavLink to="/conta/estatisticas">
           <img src={StatsSvg} alt="Estatisticas das fotos" />
