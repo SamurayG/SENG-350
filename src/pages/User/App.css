@@ -1,5 +1,3 @@
-
-
 .input {
   padding: 5px 15px;
   width: 300px;
@@ -12,10 +10,11 @@
 .user {
   list-style: none;
   margin: 10px 0;
-  padding: 16px;
+  padding: 10px;
   background: #eee;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .user-id {
