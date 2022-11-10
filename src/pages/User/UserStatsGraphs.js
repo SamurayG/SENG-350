@@ -3,20 +3,20 @@ import React, { useState } from "react";
 import "./App.css"
 import Modal from './Components/Modal'
 
-const UserStatsGraphs = () => {
+const USERS = [
+  { id: 1, name: 'Robotics', members: 32 },
+  { id: 2, name: 'Rocketry', members: 30 },
+  { id: 3, name: 'Dogs', members: 40 },
+  { id: 4, name: 'African & Caribbean Association', members: 50 },
+  { id: 5, name: 'Dancing', members: 30 },
+  { id: 6, name: 'Chess', members: 68 },
+  { id: 7, name: 'Reading', members: 34 },
+  { id: 8, name: 'Hiking', members: 28 },
+  { id: 9, name: 'Soccer', members: 23 },
+  { id: 10, name: 'Basketball Intramurals', members: 23 },
+];
 
-  const USERS = [
-    { id: 1, name: 'Robotics', members: 32 },
-    { id: 2, name: 'Rocketry', members: 30 },
-    { id: 3, name: 'Dogs', members: 40 },
-    { id: 4, name: 'African & Caribbean Association', members: 50 },
-    { id: 5, name: 'Dancing', members: 30 },
-    { id: 6, name: 'Chess', members: 68 },
-    { id: 7, name: 'Reading', members: 34 },
-    { id: 8, name: 'Hiking', members: 28 },
-    { id: 9, name: 'Soccer', members: 23 },
-    { id: 10, name: 'Basketball Intramurals', members: 23 },
-  ];
+const UserStatsGraphs = () => {
 
   const [name, setName] = useState('');
 
@@ -58,7 +58,7 @@ const UserStatsGraphs = () => {
               <span className="user-id">{user.id}</span>
               <span className="user-name">{user.name}</span>
               {/* <span className="user-members">{user.members} members</span> */}
-              <Modal/>
+              <Modal />
             </li>
           ))
         ) : (
@@ -69,4 +69,5 @@ const UserStatsGraphs = () => {
   );
 };
 
+export { USERS };
 export default UserStatsGraphs;
