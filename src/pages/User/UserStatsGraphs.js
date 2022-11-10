@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 // import styles from "./UserStatsGraphs.module.css";
 import "./App.css"
-import Modal from './Components/Modal'
+import Dog from './Components/dog'
+import Robotics from './Components/robotics'
+import RocketryModal from "./Components/rocketModal";
+import Africa from './Components/africa';
+import Dance from './Components/dancing';
+import Chess from './Components/chess';
+import Reading from './Components/reading';
+import Hiking from "./Components/hiking";
+import Soccer from "./Components/soccer";
+import Basketball from "./Components/basketball";
 
 const USERS = [
   { id: 1, name: 'Robotics', members: 32 },
@@ -58,7 +67,19 @@ const UserStatsGraphs = () => {
               <span className="user-id">{user.id}</span>
               <span className="user-name">{user.name}</span>
               {/* <span className="user-members">{user.members} members</span> */}
-              <Modal />
+              
+              {
+                user.name === 'Robotics' ? <Robotics/> 
+                : user.name === 'Rocketry' ? <RocketryModal/> 
+                : user.name === 'Dogs' ? <Dog/> 
+                : user.name === 'African & Caribbean Association' ? <Africa/> 
+                : user.name === 'Dancing' ? <Dance/> 
+                : user.name === 'Chess' ? <Chess/> 
+                : user.name === 'Reading' ? <Reading/> 
+                : user.name === 'Hiking' ? <Hiking/> 
+                : user.name === 'Soccer' ? <Soccer/> 
+                : <Basketball/>
+              }
             </li>
           ))
         ) : (
