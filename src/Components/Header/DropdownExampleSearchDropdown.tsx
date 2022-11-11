@@ -18,10 +18,6 @@ export const DropdownExampleSearchDropdown = (props:any) => {
   const [selectedThread, setThread] = useState("Support Dogs Thread")
   const [open, setOpen] = useState(false);
 
-  useEffect(()=>{
-    setOpen(props.open);
-  },[props]);
-
   return (
     <div className='menu-container' >
       <div className='menu-trigger' onClick={() => { setOpen(!open) }}>
