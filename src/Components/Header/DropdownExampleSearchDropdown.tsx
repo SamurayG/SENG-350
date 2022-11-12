@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./DropdownExampleSearchDropdown.css";
 import { HeaderCss, LoginLink, Logo } from "./style";
+import Button from 'react-bootstrap/Button';
 
 //let menuRef = useRef();
 
@@ -14,7 +15,7 @@ function DropdownItem(props: any) {
   );
 }
 
-export const DropdownExampleSearchDropdown = (props:any) => {
+export const DropdownExampleSearchDropdown = (props: any) => {
   const [selectedThread, setThread] = useState("Support Dogs Thread")
   const [open, setOpen] = useState(false);
 
@@ -22,7 +23,9 @@ export const DropdownExampleSearchDropdown = (props:any) => {
     <div className='menu-container' >
       <div className='menu-trigger' onClick={() => { setOpen(!open) }}>
         <Logo to="/" aria-label="Dogs- Home">
-          <p>{selectedThread}</p>
+        <div className="mb-2">
+          <Button className="button button5" variant="outline-primary"><p>{selectedThread} {'▼'}</p> </Button>
+        </div>
         </Logo>
       </div>
 
