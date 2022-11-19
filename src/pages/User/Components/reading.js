@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Modal.css";
 import "../App.css"
+import book from "../../../assets/clubPictures/book.jpg"
 
 export default function Reading() {
   const [modal, setModal] = useState(false);
@@ -20,18 +21,21 @@ export default function Reading() {
     <button onClick={toggleModal} className="btn-modal">
         Details
       </button>
-
       {modal && (
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Reading</h2>
+            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            <hr/>
             <p>
             We are a group of UVic students who are interested 
             in getting together to talk about books that inspire us!
             </p>
+            <div className="br"></div>
+            <img src={book} alt="book" className="centerImage"/>
             <button className="close-modal" onClick={toggleModal}>
-              CLOSE
+              <font size="+1">✕</font>
             </button>
           </div>
         </div>

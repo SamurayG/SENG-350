@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Modal.css";
 import "../App.css"
+import dog from "../../../assets/clubPictures/dog.png"
 
 export default function Dog() {
   const [modal, setModal] = useState(false);
@@ -26,6 +27,8 @@ export default function Dog() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Dogs</h2>
+            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            <hr/>
             <p>
             Dogs are highly social animals who enjoy the company of other canines. 
             They also like being active and having something to do. Many of today’s 
@@ -35,8 +38,10 @@ export default function Dog() {
             and behavioral problems, but for many dogs, hanging out with other canines 
             on a regular basis can help keep them happy and healthy. 
             </p>
+            <div className="br"></div>
+            <img src={dog} alt="dog" className="centerImage"/>
             <button className="close-modal" onClick={toggleModal}>
-              CLOSE
+              <font size="+1">✕</font>
             </button>
           </div>
         </div>

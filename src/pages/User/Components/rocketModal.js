@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Modal.css";
 import "../App.css"
+import rocket from "../../../assets/clubPictures/rocket.jpg"
 
 export default function RocketryModal() {
   const [modal, setModal] = useState(false);
@@ -26,6 +27,8 @@ export default function RocketryModal() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Rocketry</h2>
+            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            <hr/>
             <p>
             The UVic Rocketry Team is a student-led group at the University of 
             Victoria that designs and builds competitive sounding rockets. We participate 
@@ -37,10 +40,11 @@ export default function RocketryModal() {
             (11,702 ft) above ground level. At the SA Cup 2018, we received an honorable 
             mention in the SDL Payload Challenge. At the first Launch Canada event, the 
             team came in 2nd in the basic category.
-
             </p>
+            <div className="br"></div>
+            <img src={rocket} alt="rocket" className="centerImage"/>
             <button className="close-modal" onClick={toggleModal}>
-              CLOSE
+              <font size="+1">✕</font>
             </button>
           </div>
         </div>

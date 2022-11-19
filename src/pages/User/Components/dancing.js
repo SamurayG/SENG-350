@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Modal.css";
 import "../App.css"
+import dance from "../../../assets/clubPictures/dance.jpg"
 
 export default function Dance() {
   const [modal, setModal] = useState(false);
@@ -26,6 +27,8 @@ export default function Dance() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Dancing</h2>
+            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            <hr/>
             <p>
             Welcome to the UVic Ballroom, Latin, and Swing Club (UVBLSC)! 
             As a Vikes Rec Club, we believe that ballroom dancing improves 
@@ -36,8 +39,10 @@ export default function Dance() {
             (having two left feet is fine), just show up and get ready to have fun, 
             meet new people, and, of course, learn how to dance!.
             </p>
+            <div className="br"></div>
+            <img src={dance} alt="dance" className="centerImage"/>
             <button className="close-modal" onClick={toggleModal}>
-              CLOSE
+              <font size="+1">✕</font>
             </button>
           </div>
         </div>

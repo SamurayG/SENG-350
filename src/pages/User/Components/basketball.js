@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Modal.css";
 import "../App.css"
+import basketball from "../../../assets/clubPictures/basketball.png"
 
 export default function Basketball() {
   const [modal, setModal] = useState(false);
@@ -26,12 +27,16 @@ export default function Basketball() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Basketball</h2>
+            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            <hr/>
             <p>
             A group of Ballers plaing every Tuesday night at 6pm, Carsa. 
             Come join us for some scrimmage games!
             </p>
+            <div className="br"></div>
+            <img src={basketball} alt="basketball" className="centerImage"/>
             <button className="close-modal" onClick={toggleModal}>
-              CLOSE
+              <font size="+1">✕</font>
             </button>
           </div>
         </div>
