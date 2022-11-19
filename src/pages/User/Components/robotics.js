@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Modal.css";
 import "../App.css"
+import robot from "../../../assets/clubPictures/robot.png"
 
 export default function Robotics() {
   const [modal, setModal] = useState(false);
@@ -19,13 +20,15 @@ export default function Robotics() {
     <>
     <button onClick={toggleModal} className="btn-modal">
         Details
-      </button>
+    </button>
 
       {modal && (
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
-            <h2>Robotics</h2>
+          <h2>Robotics</h2>
+          uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+          <hr/>
             <p>
             The UVic Robotics Club comprises of undergraduate students from a 
             variety of backgrounds – engineering, computer science, business, 
@@ -34,8 +37,10 @@ export default function Robotics() {
             International Rover Challenge (CIRC).  We welcome all those interested, 
             whatever the current skill set.
             </p>
+            <div className="br"></div>
+            <img src={robot} alt="robot" />
             <button className="close-modal" onClick={toggleModal}>
-              CLOSE
+              <font size="+1">✕</font>
             </button>
           </div>
         </div>

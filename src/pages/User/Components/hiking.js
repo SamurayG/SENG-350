@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Modal.css";
 import "../App.css"
+import hiking from "../../../assets/clubPictures/hiking.jpg"
 
 export default function Hiking() {
   const [modal, setModal] = useState(false);
@@ -26,6 +27,8 @@ export default function Hiking() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Hiking</h2>
+            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            <hr/>
             <p>
             The University of Victoria Outdoors Club (ODC) is a student-run 
             club of outdoor enthusiasts. We enjoy hiking, backpacking, snowshoeing, 
@@ -38,8 +41,10 @@ export default function Hiking() {
             looking to share some of your favorite spots with others connect with UVIC 
             Outdoors club execs to learn more about what we are planning! 
             </p>
+            <div className="br"></div>
+            <img src={hiking} alt="hiking" className="centerImage"/>
             <button className="close-modal" onClick={toggleModal}>
-              CLOSE
+              <font size="+1">✕</font>
             </button>
           </div>
         </div>
