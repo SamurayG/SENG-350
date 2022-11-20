@@ -26,7 +26,7 @@ export default function Reading() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Reading</h2>
-            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            uvic.reading@gmail.com | CLE 120B | Wednesdays 5:00 - 6:30pm
             <hr/>
             <p>
             We are a group of UVic students who are interested 
