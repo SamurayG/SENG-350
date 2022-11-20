@@ -27,7 +27,7 @@ export default function RocketryModal() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Rocketry</h2>
-            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            uvic.rocketry@gmail.com | ELW 122A | Thursdays 6:30 - 9:00pm
             <hr/>
             <p>
             The UVic Rocketry Team is a student-led group at the University of 

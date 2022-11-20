@@ -27,7 +27,7 @@ export default function Dance() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Dancing</h2>
-            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            ballroom@uvicdance.com | 3800 Finnerty Rd  | Wednesdays 6:00 - 9:00pm
             <hr/>
             <p>
             Welcome to the UVic Ballroom, Latin, and Swing Club (UVBLSC)! 

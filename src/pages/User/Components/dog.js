@@ -27,16 +27,18 @@ export default function Dog() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Dogs</h2>
-            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            uvic.dogs@gmail.com | SUB 103 | Mondays 1:30pm - 4:30pm
             <hr/>
             <p>
-            Dogs are highly social animals who enjoy the company of other canines. 
-            They also like being active and having something to do. Many of today’s 
-            dogs are lucky enough to be treated as family members and don’t have to 
-            work like their ancestors did, but spending a lot of time at home often 
-            leaves them bored. Lack of socialization and boredom can lead to health 
-            and behavioral problems, but for many dogs, hanging out with other canines 
-            on a regular basis can help keep them happy and healthy. 
+            Missing your pet? Stressed about school? Join us or for cuddles 
+            with therapy dogs while enjoying free coffee, tea, and cookies. If you are 
+            pet-sick for your best animal pals, or just keen to pat a new dog friend, 
+            the Dog club is for you! This is a drop-in program and anyone is welcome 
+            to attend.  <br/><br/>
+
+            All of the therapy animal teams are volunteers of Pacific Animal Therapy 
+            Society (PATS). The program is sponsored by the Anglican Diocese of BC.
+            Come Join us for some fun with our furry friends!
             </p>
             <div className="br"></div>
             <img src={dog} alt="dog" className="centerImage"/>
