@@ -26,7 +26,7 @@ export default function Soccer() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Soccer</h2>
-            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            uvic.soccer@gmail.com | CARSA Field 2 | Tuesdays 6:30 - 9:00pm
             <hr/>
             <p>
             Monday nights is a co-ed 7 aside soccer league wtih small nets 

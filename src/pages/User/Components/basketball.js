@@ -27,7 +27,7 @@ export default function Basketball() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Basketball</h2>
-            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            uvic.basketball@gmail.com | CARSA Gym 1 | Tuesdays 7:00pm - 10:00pm
             <hr/>
             <p>
             A group of Ballers plaing every Tuesday night at 6pm, Carsa. 

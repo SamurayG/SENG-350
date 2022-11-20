@@ -27,7 +27,7 @@ export default function Robotics() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
           <h2>Robotics</h2>
-          uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+          uvic.robotics@gmail.com | ELW 102A | Thursdays 3:30 - 5:00pm
           <hr/>
             <p>
             The UVic Robotics Club comprises of undergraduate students from a 

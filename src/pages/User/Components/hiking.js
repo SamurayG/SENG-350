@@ -27,7 +27,7 @@ export default function Hiking() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Hiking</h2>
-            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            uvic.hikings@gmail.com | BiblioCafé | Tuesdays 4:00pm - 4:30pm
             <hr/>
             <p>
             The University of Victoria Outdoors Club (ODC) is a student-run 

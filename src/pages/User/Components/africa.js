@@ -26,7 +26,7 @@ export default function Africa() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>African & Caribbean Association</h2>
-            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            uvicacsa@gmail.com | CLE 200A | Fridays 6:00pm - 9:30pm
             <hr/>
             <p>
             A University of Victoria association that aims to increase cultural awareness and community unity 🌍

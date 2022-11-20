@@ -27,7 +27,7 @@ export default function Chess() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Chess</h2>
-            uvic.robotics@gmail.com | ELW 302B | Thursdays 3:30 - 5:00pm
+            uvic.chess@gmail.com | HSDA 264 | Thursdays 3:00pm - 6:00pm
             <hr/>
             <p>
             For those interested in playing casual chess at the University of Victoria.
