@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import UserContext from "../../Contexts/UserContext";
 import MyPhotos from "../../assets/feed.svg";
-import StatsSvg from "../../assets/estatisticas.svg";
+import StatsSvg from "../../assets/clubs.svg";
 import AddSvg from "../../assets/adicionar.svg";
 import ExitSvg from "../../assets/sair.svg";
 import { MenuHamburguer, UserHeaderNavCss } from "./style";
@@ -40,9 +40,9 @@ function UserHeaderNav() {
           <img src={MyPhotos} alt="My Photos" />
           {mobile && "My Photos"}
         </NavLink>
-        <NavLink to="/conta/estatisticas">
-          <img src={StatsSvg} alt="Estatisticas das fotos" />
-          {mobile && "Estatisticas"}
+        <NavLink to="/conta/clubs">
+          <img src={StatsSvg} alt="clubs" />
+          {mobile && "clubs"}
         </NavLink>
         <NavLink to="/conta/posta">
           <img src={AddSvg} alt="Adicionar Fotos" />

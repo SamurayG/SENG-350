@@ -13,7 +13,7 @@ function UserHeader() {
       case "/conta/posta":
         setTitle("Post Your Photo");
         break;
-      case "/conta/estatisticas":
+      case "/conta/clubs":
         setTitle("Clubs");
         break;
       default:
