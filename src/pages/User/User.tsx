@@ -18,7 +18,7 @@ function User() {
         <Routes>
           <Route element={<Feed user={data.id} />} path="/" />
           <Route element={<UserPhotoPost />} path="posta" />
-          <Route element={<UserStats />} path="estatisticas" />
+          <Route element={<UserStats />} path="clubs" />
           <Route path="*" element={<NotFound404 />} />
         </Routes>
       </section>
