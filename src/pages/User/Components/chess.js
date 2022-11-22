@@ -27,11 +27,11 @@ export default function Chess() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Chess</h2>
-            uvic.chess@gmail.com | HSDA 264 | Thursdays 3:00pm - 6:00pm
+            uvic.chess@gmail.com | BiblioCafé | Thursdays 3:00pm - 6:00pm
             <hr/>
             <p>
             For those interested in playing casual chess at the University of Victoria.
-            Every Friday At the biblioCafe.
+            Every Friday At the BiblioCafé.
             </p>
             <div className="br"></div>
             <img src={chess} alt="chess" className="centerImage"/>
