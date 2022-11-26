@@ -9,12 +9,12 @@ const UserProfile = () => {
   if (user)
     return (
       <section className="container mainContainer">
-        <Head title={"Perfil de " + user} description="Pagina de perfil" />
+        <Head title={user + "'s Profile"} description="Profile page" />
         <Title style={{ margin: "2rem 0" }}>{user}</Title>
         <Feed user={user} />
       </section>
     );
-  return <Error error="Pagina invalida" />;
+  return <Error error="Invalid page" />;
 };
 
 export default UserProfile;
