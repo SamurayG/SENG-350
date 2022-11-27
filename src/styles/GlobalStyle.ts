@@ -78,17 +78,14 @@ a {
 .animeleft {
    opacity: 0;
   transform: translateX(-20px);
-  animation: ${animeLeft} 0.3s forwards; 
+  animation: ${animeLeft} 0.9s forwards; 
 }
-
-
-
 `;
 
 export const AnimeLeft = styled.section`
   opacity: 0;
   transform: translateX(-20px);
-  animation: ${animeLeft} 0.3s forwards;
+  animation: ${animeLeft} 0.9s forwards;
 `;
 
 export const Title = styled.h1`
