@@ -61,9 +61,9 @@ function LoginCreate() {
       <LoginForms onSubmit={CreateUser}>
         <Input {...username} label="Username" type="text" name="username" />
         <Input {...email} label="Email" type="email" name="email" />
-        {/* <form method="post">
-          <input type = "button" value = "Varify Email" onclick = "sendEmail()"/>
-        </form> */}
+         <form method="post">
+          <input type = "button" value = "Varify Email" /> 
+        </form> 
         <Input {...password} label="Password" type="password" name="password" />
         <Input {...confirmpassword} label="Confirm Password" type="password" name="confirmpassword" />    
         {!loading ? (
