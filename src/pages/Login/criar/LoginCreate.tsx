@@ -9,6 +9,7 @@ import { AnimeLeft, Title } from "../../../styles/GlobalStyle";
 import { LoginForms } from "../style";
 import { USER_POST } from "../../../services/Api";
 import Head from "../../../Components/Head/Head";
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 function LoginCreate() {
   const { userLogin } = React.useContext(UserContext);
@@ -36,6 +37,22 @@ function LoginCreate() {
         console.log(er);
       }
     }
+
+      //Sending a varification email
+    function sendEmail(){  
+      Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "username",
+        Password : "password",
+        To : email.value,
+        From : "you@isp.com",
+        Subject : "Email Varification",
+        Body : "Please varify the email address."
+    }).then(
+      message => alert(message)
+    );
+  }
+    
   }
   return (
     <AnimeLeft>
@@ -44,8 +61,11 @@ function LoginCreate() {
       <LoginForms onSubmit={CreateUser}>
         <Input {...username} label="Username" type="text" name="username" />
         <Input {...email} label="Email" type="email" name="email" />
+        {/* <form method="post">
+          <input type = "button" value = "Varify Email" onclick = "sendEmail()"/>
+        </form> */}
         <Input {...password} label="Password" type="password" name="password" />
-        <Input {...confirmpassword} label="Confirm Password" type="password" name="confirmpassword" />
+        <Input {...confirmpassword} label="Confirm Password" type="password" name="confirmpassword" />    
         {!loading ? (
           <Button text="Register" />
         ) : (
