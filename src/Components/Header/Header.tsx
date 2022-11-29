@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-//import { Dogs } from "../../assets/Dogs";
 import { HeaderCss, LoginLink, Logo } from "./style";
 import { UserContext } from "../../Contexts/UserContext";
-import {DropdownExampleSearchDropdown} from "./DropdownExampleSearchDropdown";
+import { DropdownExampleSearchDropdown } from "./DropdownExampleSearchDropdown";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -15,7 +14,7 @@ function Header() {
   return (
     <HeaderCss>
       <nav className="container">
-        <DropdownExampleSearchDropdown props={{open: open}}/>
+        <DropdownExampleSearchDropdown props={{ open: open }} />
 
         {data ? (
           <LoginLink to="/conta" onClick={onClick}>{data?.nome}</LoginLink>
