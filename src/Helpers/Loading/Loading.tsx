@@ -2,29 +2,29 @@ import React from "react";
 import { LoadingCss, LoadingWrapper } from "./style";
 
 function Loading() {
-  const [step, setStep] = React.useState(3);
+  // const [step, setStep] = React.useState(3);
 
-  React.useEffect(() => {
-    const updateStep = () => {
-      setStep((step) => {
-        if (step < 3) return step + 1;
-        return 0;
-      });
-    };
-    const interval = setInterval(updateStep, 300);
-    return () => clearInterval(interval);
-  }, []);
+  // React.useEffect(() => {
+  //   const updateStep = () => {
+  //     setStep((step) => {
+  //       if (step < 3) return step + 1;
+  //       return 0;
+  //     });
+  //   };
+  //   const interval = setInterval(updateStep, 300);
+  //   return () => clearInterval(interval);
+  // }, []);
 
-  function displayStep(i: number) {
-    return {
-      display: step === i ? "block" : "none",
-    };
-  }
+  // function displayStep(i: number) {
+  //   return {
+  //     display: step === i ? "block" : "none",
+  //   };
+  // }
 
   return (
     <LoadingWrapper>
       <LoadingCss>
-        <svg
+        {/* <svg
           width="46"
           height="31"
           viewBox="0 0 46 31"
@@ -100,7 +100,7 @@ function Loading() {
               fill="#333"
             />
           </g>
-        </svg>
+        </svg> */}
       </LoadingCss>
     </LoadingWrapper>
   );
